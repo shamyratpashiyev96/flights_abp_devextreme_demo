@@ -1,0 +1,8 @@
+<ng-container *ngIf="service.airports | async as airports">
+    <dx-data-grid [dataSource]="airports">
+        <dxi-column dataField="city"></dxi-column>
+        <dxi-column dataField="code"></dxi-column>
+        <dxi-column dataField="id"></dxi-column>
+        <dxi-column dataField="creationTime"></dxi-column>
+    </dx-data-grid>
+</ng-container>
